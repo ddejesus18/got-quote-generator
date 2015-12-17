@@ -1,24 +1,32 @@
 * {
   margin: 0;
-  text-align: center;
-   font-family: 'Oswald';
+  font-family: 'Oswald';
 }
 .header img {
   height: 80%;
-  width: 90%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   border: solid grey 5px;
 }
 .wrapper {
-  width: 90%;
-  background-color: black;
-  margin-right: auto;
+  width: 100%;
+  margin-top: -31%;
+  background: rgba(6, 6, 6, .9);
   margin-left: auto;
-  height: 100%;
+  margin-right: auto;
+  position: absolute;
+  border-radius: 1%;
+  z-index: 2;
 }
 #word {
   text-align: left;
   float: left;
+  color: white;
+  margin-left: 3%;
+  margin-top: 37px;
+  margin-bottom: 1%;
 }
 #word h1 {
   font-family: 'Oswald';
@@ -28,16 +36,14 @@
 
 }
 #word h2 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   letter-spacing: 3px;
   text-align: left;
 
 }
 button {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 1.1em;
-  margin-bottom: 30px;
+  padding: 5px 10px;
+  font-size: 1.3em;
   border-radius: 2px;
   background-color: black;
   color: white;
@@ -48,30 +54,33 @@ button:hover {
   background-color: white;
   color: black;
 }
+button:active {
+  border: 2px solid white;
+}
 .machine {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 45%;
   font-family:  cursive;
-  background: white;
+  color: white;
   border-radius: 4px;
+  margin-top: 50px;
   padding-top: 15px;
   float: right;
   position: relative;
-
 }
-h3 {
+#h3 q {
+  display: block;
   text-align: left;
+  font-size: 1.38em;
 }
-h3, h4 {
+#h3 q, #h4 {
   font-family: 'marvel';
-  color: black;
   padding-bottom: 7px;
   padding-left: 5%;
   padding-right: 5%;
 }
-h4 {
+#h4 {
   text-align: right;
   padding-right: 5%;
-  padding-top: 5px;
+  padding-top: 9px;
+  font-size: 1.26em;
 }

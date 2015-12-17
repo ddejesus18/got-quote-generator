@@ -1,13 +1,4 @@
-/*this var is used so I don't keep writing out quoteMaster.length */
-var num = quoteMaster.length;
 
-// this var will pass our quote to h3
-var quoteRendered = document.querySelector('h3');
-
-//this var will pass our quote author to h4
-  var quoteRenderedBy = document.querySelector('h4');
-
-/*this array contains all of the quotes that will be available when the button is pressed */
 var quoteMaster = [
   { quote: "Never forget what you are, for surely the world will not. Make it your strength. Then it can never be your weakness. Armor yourself in it, and it will never be used to hurt you.",
      name: 'Tyrion Lannister', },
@@ -45,7 +36,7 @@ var quoteMaster = [
   {quote: "All men must die, but we are not men.",
    name: "Daenerys Targaryen"},
 
-  {quote: "'m a monster, as well as a dwarf. You should charge me double", name: "Tyrion Lannister"},
+  {quote: "I'm a monster, as well as a dwarf. You should charge me double", name: "Tyrion Lannister"},
 
   {quote:"I will hurt you for this. A day will come when you think you are safe and happy, and your joy will turn to ashes in your mouth. And you will know the debt is paid",
    name: "Tyrion Lannister"},
@@ -96,20 +87,28 @@ var quoteMaster = [
   {quote: "Love is poison. A sweet poison, yes, but it will kill you all the same.",
    name: "Cersie Lannister"},
 
-  {quote: "he only way to keep your people loyal is to make certain they fear you more than they do the enemy.",
+  {quote: "The only way to keep your people loyal is to make certain they fear you more than they do the enemy.",
    name: "Cersie Lannister"},
 
-  {quote: " am a lioness. I will not cringe for them.",
+  {quote: "I am a lioness. I will not cringe for them.",
    name: "Cersie Lannister"}
 ];
-/* our ran var is the function that is going to get a random number for us. That random number reflexs the index of our quoteMaster array.*/
-var run = function getRandom() {
-return Math.floor(Math.random()*num);
-};
-/* we are creating the function that is going to tell JS what to do when the button is clicked */
-for(i=0;i<=num;i+=1) {
-  var theQuote;
+num = quoteMaster.length;
+
+var quoteRendered = document.getElementById('h3');
+
+var quoteRenderedBy = document.getElementById('h4');
+
+var handler = function(event) {
+  for (var i = 0; i < num; i++) {
+  var x = Math.floor(Math.random() * i);
+   var quoteText = quoteMaster[x].quote;
+  var quoteTextBy = quoteMaster[x].name;
+}
+  quoteRendered.innerHTML = quoteText;
+  quoteRenderedBy.innerHTML = quoteTextBy;
 };
 
-myButton.onclick = function() {
- };
+var button = document.getElementById('but');
+
+button.addEventListener('click', handler);

@@ -70,17 +70,14 @@ button:active {
 #h3 q {
   display: block;
   text-align: left;
-  font-size: 1.38em;
-}
-#h3 q, #h4 {
-  font-family: 'marvel';
-  padding-bottom: 7px;
-  padding-left: 5%;
+  font-size: 1.52em;
   padding-right: 5%;
+  font-family: 'marvel';
 }
 #h4 {
   text-align: right;
-  padding-right: 5%;
+  padding-right: 9%;
   padding-top: 9px;
-  font-size: 1.26em;
+  font-size: 1.33em;
+  font-family: 'marvel';
 }

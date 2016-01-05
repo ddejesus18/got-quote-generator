@@ -47,7 +47,7 @@ var quoteMaster = [
   {quote:"I'll tell you what. I'm going to give you a present. After I raise my armies, and kill your traitor brother, I'll give you his head as well.",
    name: "Joffrey Baratheon"},
 
-  {quote: "t's the family name that lives on. It's all that lives on. Not your personal glory, not your honor... but family.",
+  {quote: "It's the family name that lives on. It's all that lives on. Not your personal glory, not your honor... but family.",
    name: "Tywin Lannister"},
 
   {quote: "When you play the game of thrones, you win or you die.",
